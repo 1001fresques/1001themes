@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "themes": {
+        "sky": {
+            "name": "1001fresques",
+            "repo": "https://1001fresques.fr/theme",
+            "zip": "",
+            "summary": "1001 fresques",
+            "version": "1.0.0",
+            "image": ""
+        }
+    }
+}
