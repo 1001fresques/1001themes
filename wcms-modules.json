@@ -3,11 +3,11 @@
     "themes": {
         "sky": {
             "name": "1001fresques",
-            "repo": "https://1001fresques.fr/theme",
-            "zip": "",
+            "repo": "https://github.com/1001fresques/1001themes/tree/master",
+            "zip": "https://github.com/1001fresques/1001themes/archive/master.zip",
             "summary": "1001 fresques",
             "version": "1.0.0",
-            "image": ""
+            "image": "https://1001fresques.fr/1001themes/preview.jpg"
         }
     }
 }
