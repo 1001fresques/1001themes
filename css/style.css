@@ -9,10 +9,12 @@ body {
   padding: 0; }
 
 h6 {
+  font-family: 'Arial', sans-serif;
   font-size: 17px;
   line-height: 1.6;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-weight: normal; }
 
 h1, h2, h3, h4, .ville a {
   display: block;
@@ -362,7 +364,7 @@ small {
 
   .col {
     text-align: center; }
-    .col p {
+    .col p, .col ul {
       text-align: left; }
 
   .col.pt1, .col.pt2, .col.pt3 {
@@ -371,6 +373,8 @@ small {
   .lieux {
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr); }
+    .lieux h6 {
+      margin-left: 0; }
 
   .ville2 {
     grid-column: auto; } }
