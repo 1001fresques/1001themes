@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0; }
 
-h6 {
+h6, .form {
   font-family: 'Arial', sans-serif;
   font-size: 17px;
   line-height: 1.6;
@@ -36,7 +36,7 @@ h1 {
     position: absolute;
     opacity: 0; }
 
-form h1 {
+form h1, .lieux h1 {
   background: none;
   width: auto;
   padding-top: 0; }
@@ -373,7 +373,7 @@ small {
   .lieux {
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr); }
-    .lieux h6 {
+    .lieux h6, .lieux .form {
       margin-left: 0; }
 
   .ville2 {
