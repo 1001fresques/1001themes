@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Search Engine Optimization (SEO) -->
-		<meta name="title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
+		<meta name="title" content="<?= $Wcms->page('title') ?>" />
 		<meta name="description" content="<?= $Wcms->page('description') ?>">
 		<meta name="author" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
 		<meta name="robots" content="index, follow" />
@@ -22,7 +22,7 @@
 
 		<!-- Website and page title -->
 		<title>
-			<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>
+			<?= $Wcms->page('title') ?>
 
 		</title>
 
@@ -43,11 +43,11 @@
 
 	<div class="content">
 		<div class="col colfull coltit">
-			<?php /*<p><strong>Weekend du 16-17 sept 2023</strong></p>*/ ?><p>&nbsp;</p>
+			<p>&nbsp;</p>
 			<a href="<?= $Wcms->url() ?>"><h1><span>1001 fresques</span></h1></a>
 		</div>
 		<div class="col colpart pt3">
-			<h2><?= $Wcms->get('config','siteTitle') ?></h2>
+			<?php /*<h2><?= $Wcms->get('config','siteTitle') ?></h2>*/ ?>
 			<?= $Wcms->menu() ?>
 
 

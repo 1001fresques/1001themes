@@ -168,9 +168,11 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto); }
-  .lieux h1, .lieux h2, .lieux h3, .lieux h4, .lieux h5, .lieux h6 {
+  .lieux h1, .lieux h2, .lieux h3, .lieux h4, .lieux h5, .lieux h6, .lieux form {
     margin-top: 0;
     margin-left: 200px; }
+  .lieux form h1 {
+    margin-left: 0; }
 
 .ville {
   background: white;
