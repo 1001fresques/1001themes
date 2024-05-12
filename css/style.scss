@@ -1,0 +1,248 @@
+$color1: #f67d33;
+$color1d: #e66d33;
+$color2: #0091ae;
+$color3: #219e8b;
+$color1comp: white;
+$color2comp: white;
+$color3comp: white;
+$gut:100px;
+$col:300px;
+$pad:50px;
+
+@mixin cols($col-value, $gut-value, $pad-value) {
+    .col {width:$col-value;padding:0 $gut-value/2 $gut-value;box-sizing: border-box;}
+/*    .colfull {width:$col-value+$gut-value;}
+    .col2 {width:2*$col-value+$gut-value;}
+    .col4 {width:4*$col-value+4*$gut-value;}*/
+
+    .col {width:23%;}
+    .colpart {width:44%;}
+    .colanim {width:32%;}
+    .col.pt1 {padding-top:$pad-value;}
+    .col.pt2 {padding-top:$pad-value*2;}
+    .col.pt3 {padding-top:$pad-value*3;}
+    .colanim {border-bottom-left-radius:$gut-value;}
+    
+}
+  
+  
+
+body {
+    background:#fbefe3 url('bg.png') center top no-repeat;
+    background-size:120%;
+    font-family: 'Arial', sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,.ville a {
+    display:block;
+    font-family: 'Poppins', sans-serif;
+    line-height:1.2;
+    clear:both;
+}
+.ville a {
+    color:$color1d;
+}
+h1 {
+    background: transparent url('1001fresques.png') center top no-repeat;
+    background-size: contain;
+    font-weight:900;
+    span {position:absolute;opacity:0;}
+    width:100%;
+    padding-top:100%;
+    margin:auto;
+}
+form h1 {
+    background:none;
+    width:auto;
+    padding-top:0;
+}
+a {
+    color:$color1;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+h2 {font-weight:900;font-size:30px;}
+h3 {margin-top:$gut;font-size:22px;}
+.nav-item {
+    display:inline-block;
+    a {
+        display:inline-block;
+        text-align:center;
+        background-color:$color1;
+        color:$color1comp;
+        border:1px solid $color1;
+        border-radius:$gut/2;
+        padding:$pad/6 $pad/2;
+        margin-right:$pad/6;
+        font-weight:bold;
+        text-decoration:none;
+        transition:0.3s;
+        &:hover {
+            background-color:$color1comp;
+            color:$color1;
+        }
+    }
+}
+.boutn {
+    display:inline-block;
+    text-align:center;
+    background-color:$color1;
+    color:$color1comp;
+    border:1px solid $color1;
+    border-radius:$gut/2;
+    padding:$pad/3 $pad/2;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+    &:hover {
+        background-color:$color1comp;
+        color:$color1;
+    }
+    &.boutnalt {
+        background-color:$color2;
+        border-color:$color2;
+        &:hover {
+            background-color:$color2comp;
+            color:$color2;
+        }
+
+    }
+}
+
+
+@include cols($col, $gut, $pad);
+.content {text-align:center;margin:auto;}
+.col {text-align:left;display:inline-block;vertical-align:top;}
+.colfull {padding:0;}
+.colcomp {
+    background-color:$color2;
+    color:$color2comp;
+    a {color:$color2comp;}
+}
+.coltit {
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'Poppins', sans-serif;
+    line-height:1;
+}
+.colpart {
+    h1,h2,h3,h4,p {
+        padding-right:$pad;
+    }
+}
+.colcol {
+    padding-top:$gut/2;
+}
+.lieux {
+    background:transparent url('carte-mel.png') center center no-repeat;
+    background-size: cover;
+    margin-left:-200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.ville {
+    background:$color1comp;
+    vertical-align: top;
+    padding:10px;
+    border-radius: 20px;
+    border:3px solid $color1;
+    h4 {
+        color:#000;
+    }
+    a { text-decoration: none; display:block; 
+        padding-left:24px;
+        &:before {
+            content:"👉 ";
+            margin-left:-24px;
+        }
+        &:hover {
+            color:#000;
+        }
+    }
+    * {
+        padding:0;
+        margin:0;
+        font-weight:bold;
+        line-height:1.4!important;
+    }
+}
+.ville2 {
+    grid-column:span 2;
+}
+
+.footer {
+    max-width:600px;
+    margin:auto;
+    a {
+        color:#000;
+        text-decoration:none;
+        cursor:text;
+    }
+}
+.autresvilles a {
+    color:#000;
+    text-decoration:none;
+    cursor:text;
+}
+small {
+    display:inline-block;
+    line-height:1.3;
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    $col:270px;
+    $gut:90px;
+    $pad:40px;
+    @include cols($col, $gut, $pad);
+}
+@media screen and (max-width: 1600px) {
+    $col:240px;
+    $gut:80px;
+    $pad:30px;
+    @include cols($col, $gut, $pad);
+}
+@media screen and (max-width: 1500px) {
+    $col:230px;
+    $gut:50px;
+    $pad:20px;
+    @include cols($col, $gut, $pad);
+}
+@media screen and (max-width: 1250px) {
+    $col:210px;
+    $gut:30px;
+    $pad:10px;
+    @include cols($col, $gut, $pad);
+}
+@media screen and (max-width: 1024px) {
+    .carte-agenda { display:none; }
+
+    body {background-size:cover;}
+    .content {width:100%;max-width:540px;}
+    .col {width:auto;padding:0 20px 20px;border-radius:0;}
+    .colfull {padding:0x 20px;}
+    h1 {width:200px;padding-top:160px;}
+    h2 br, h3 br {display:none;}
+    .colpart h1, .colpart h2, .colpart h3, .colpart h4, .colpart p {padding-right: 0;}
+    h3 {margin-top:40px;}   
+    
+    .col {text-align:center; p {text-align:left;}}
+    .col.pt1, .col.pt2, .col.pt3 {padding-top:0;}
+
+    .lieux {margin-left:0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ville2 {
+        grid-column:auto;
+    }
+    
+
+}
