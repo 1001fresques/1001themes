@@ -76,6 +76,7 @@ a {
 
 h2 {font-weight:900;font-size:30px;}
 h3 {margin-top:$gut;font-size:22px;}
+h5 {margin-top:0;font-size:22px;}
 .nav-item {
     display:inline-block;
     a {
@@ -154,7 +155,8 @@ h3 {margin-top:$gut;font-size:22px;}
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     grid-auto-rows: minmax(100px, auto);
-    h6, h5 {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top:0;
         margin-left:200px;
     }
 }
@@ -250,7 +252,7 @@ small {
 
     .lieux {margin-left:0;
         grid-template-columns: repeat(2, 1fr);
-        h6, h5, .form {
+        h1, h2, h3, h4, h5, h6, .form {
             margin-left:0;
         }
     }

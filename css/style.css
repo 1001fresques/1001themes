@@ -55,6 +55,10 @@ h3 {
   margin-top: 100px;
   font-size: 22px; }
 
+h5 {
+  margin-top: 0;
+  font-size: 22px; }
+
 .nav-item {
   display: inline-block; }
   .nav-item a {
@@ -164,7 +168,8 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto); }
-  .lieux h6, .lieux h5 {
+  .lieux h1, .lieux h2, .lieux h3, .lieux h4, .lieux h5, .lieux h6 {
+    margin-top: 0;
     margin-left: 200px; }
 
 .ville {
@@ -373,7 +378,7 @@ small {
   .lieux {
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr); }
-    .lieux h6, .lieux h5, .lieux .form {
+    .lieux h1, .lieux h2, .lieux h3, .lieux h4, .lieux h5, .lieux h6, .lieux .form {
       margin-left: 0; }
 
   .ville2 {
