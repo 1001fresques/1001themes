@@ -45,7 +45,7 @@ h6, .form {
     font-weight:normal;
 }
 
-h1,h2,h3,h4,.ville a {
+h1,h2,h3,h4,h5,.ville a {
     display:block;
     font-family: 'Poppins', sans-serif;
     line-height:1.2;
@@ -154,7 +154,7 @@ h3 {margin-top:$gut;font-size:22px;}
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     grid-auto-rows: minmax(100px, auto);
-    h6 {
+    h6, h5 {
         margin-left:200px;
     }
 }
@@ -250,7 +250,7 @@ small {
 
     .lieux {margin-left:0;
         grid-template-columns: repeat(2, 1fr);
-        h6, .form {
+        h6, h5, .form {
             margin-left:0;
         }
     }

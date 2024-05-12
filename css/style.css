@@ -16,7 +16,7 @@ h6, .form {
   padding: 0;
   font-weight: normal; }
 
-h1, h2, h3, h4, .ville a {
+h1, h2, h3, h4, h5, .ville a {
   display: block;
   font-family: 'Poppins', sans-serif;
   line-height: 1.2;
@@ -164,7 +164,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto); }
-  .lieux h6 {
+  .lieux h6, .lieux h5 {
     margin-left: 200px; }
 
 .ville {
@@ -373,7 +373,7 @@ small {
   .lieux {
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr); }
-    .lieux h6, .lieux .form {
+    .lieux h6, .lieux h5, .lieux .form {
       margin-left: 0; }
 
   .ville2 {
